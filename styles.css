@@ -1,0 +1,131 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px #CFA2BD;
+   
+}
+
+.star{
+    z-index: 9999;
+    margin-left: -150px;
+    margin-top: -5px;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.card {
+    background-image: url(./images/bg.jpg);
+    background-position-x: left;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #F6CBBA;
+    border: 5px double #CFA2BD;
+    box-shadow: -10px -10px 0px #4D4569, 10px 10px 0px #CFA2BD;
+    padding-right: 80px;
+
+h1 {
+    font-size: 1.9em;
+    text-shadow: 2px 2px 0 #000;
+}
+    
+a {  
+    color: #F6CBBA;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F6CBBA;
+    text-decoration: none;
+}
+
+h1:hover {
+    background-image: url(./images/starsTwinkle.gif);
+    transition: transform 250ms;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 100;
+    text-shadow: 2px 2px 0 #000;
+}
+
+h2:hover {
+    background-color: #AE5B5E;
+    transition: transform 250ms;
+    border-radius: 20px;
+}
+
+h3 {
+    font-size: 1em;
+    text-shadow: 2px 2px 0 #000;
+}
+
+h3:hover {
+    color: fff;
+    background-color: #000;
+    transition: transform 250ms;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
